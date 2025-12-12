@@ -10,6 +10,34 @@ body {
     background-color: black;
 }
 
+/* DISCLAIMER BANNER STYLES */
+.disclaimer-banner {
+    background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 3px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.disclaimer-banner strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.disclaimer-banner p {
+    font-size: 14px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 .main {
     background-image: url("assets/images/bg.jpg");
     background-position: center center;
@@ -96,7 +124,19 @@ nav button {
     border-radius: 4px;
     border: 1px solid white;
     cursor: pointer;
+}
 
+/* Disabled link styling */
+.disabled-link {
+    font-size: 14px;
+    color: #999;
+    cursor: not-allowed;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.disabled-link:hover {
+    color: #999;
 }
 
 .btn-red {
